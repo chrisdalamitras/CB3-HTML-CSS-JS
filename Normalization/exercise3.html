@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+	
+		table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		
+		th {
+			text-align: left;
+		}
+   
+	</style>
+	
+</head>
+<body>
+
+	<table style="width:50%">
+		
+		<caption>Table 1</caption>
+		
+		<th><u>CourseID</u></th>
+        <th><u>SemesterID</u></th>
+        <th>Num Student</th>
+		<th>Course Name</th>
+		
+		<tr>
+			<td>IT101</td>
+			<td>201301</td>
+			<td>25</td>
+			<td>Database</td>
+		</tr>
+		<tr>
+			<td>IT101</td>
+			<td>201302</td>
+			<td>25</td>
+			<td>Database</td>
+		</tr>
+		<tr>
+			<td>IT102</td>
+			<td>201301</td>
+			<td>30</td>
+			<td>Web Prog</td>
+		</tr>
+		<tr>
+			<td>IT102</td>
+			<td>201302</td>
+			<td>35</td>
+			<td>Web Prog</td>
+		</tr>
+		<tr>
+			<td>IT103</td>
+			<td>201401</td>
+			<td>20</td>
+			<td>Networking</td>
+		</tr>
+	</table>
+    
+	<ul>
+		<li><u>Table 1</u></li>
+        <li>{CourseID,SemesterID} = PK</li>
+        <li>CourseID -> Course Name (partial dependency)</li>
+		<li>non-key fields depend on all components of primary key</li>
+        <li>We remove Course Name from Table 1</li>
+    </ul>
+	
+	<table style="float: left; width:30%; margin-right:50px; ">
+		
+		<caption>Table 1</caption>
+		
+		<th><u>CourseID</u></th>
+        <th><u>SemesterID</u></th>
+        <th>Num Student</th>
+		
+		<tr>
+			<td>IT101</td>
+			<td>201301</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>IT101</td>
+			<td>201302</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>IT102</td>
+			<td>201301</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>IT102</td>
+			<td>201302</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td>IT103</td>
+			<td>201401</td>
+			<td>20</td>
+		</tr>
+	</table>
+	
+	<table style="width:30%;">
+		
+		<caption>Table 2</caption>
+		
+		<th><u>CourseID</u></th>
+        <th>Course Name</th>
+		
+		<tr>
+			<td>IT101</td>
+			<td>Database</td>
+		</tr>
+		<tr>
+			<td>IT102</td>
+			<td>Web Prog</td>
+		</tr>
+		<tr>
+			<td>IT103</td>
+			<td>Networking</td>
+		</tr>
+	</table>
+	
+	<br><br>
+	
+	<ul>
+		<li>Table 1, Table 2, Table 3 are in 2NF</li>
+    </ul>
+	
+</body>
+</html>	

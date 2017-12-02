@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+	
+		table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		
+		th {
+			text-align: left;
+		}
+   
+	</style>
+	
+</head>
+<body>
+
+	<table style="width:50%">
+		
+		<caption>Table 1</caption>
+		
+		<th><u>Item</u></th>
+        <th><u>Color</u></th>
+        <th>Price</th>
+		<th>Tax</th>
+		
+		<tr>
+			<td>T-Shirt</td>
+			<td>red</td>
+			<td>12.00</td>
+			<td>0.60</td>
+		</tr>
+		<tr>
+			<td>T-Shirt</td>
+			<td>blue</td>
+			<td>12.00</td>
+			<td>0.60</td>
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>red</td>
+			<td>12.00</td>
+			<td>0.60</td>
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>yellow</td>
+			<td>12.00</td>
+			<td>0.60</td>
+		</tr>
+		<tr>
+			<td>sweatshirt</td>
+			<td>blue</td>
+			<td>25.00</td>
+			<td>1.25</td>
+		</tr>
+		<tr>
+			<td>swaetshirt</td>
+			<td>black</td>
+			<td>25.00</td>
+			<td>1.25</td>
+		</tr>
+	</table>
+    
+	<ul>
+		<li><u>Table 1</u></li>
+        <li>{Item,Color} = PK</li>
+        <li>Item -> Price, Tax (partial dependency)</li>
+		<li>non-key fields depend on all components of primary key</li>
+        <li>We remove Price, Tax from Table 1</li>
+    </ul>
+	
+	<table style="float: left; width:30%; margin-right:50px; ">
+		
+		<caption>Table 1</caption>
+		
+		<th><u>Item</u></th>
+        <th><u>Color</u></th>
+		
+		<tr>
+			<td>T-Shirt</td>
+			<td>red</td>
+		</tr>
+		<tr>
+			<td>T-Shirt</td>
+			<td>blue</td>
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>red</td>
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>yellow</td>
+		</tr>
+		<tr>
+			<td>sweatshirt</td>
+			<td>blue</td>
+		</tr>
+		<tr>
+			<td>swaetshirt</td>
+			<td>black</td>
+		</tr>
+	</table>
+	
+	<table style="width:30%;">
+		
+		<caption>Table 2</caption>
+		
+		<th><u>Item</u></th>
+        <th>Price</th>
+		<th>Tax</th>
+		
+		<tr>
+			<td>T-Shirt</td>
+			<td>12.00</td>
+			<td>0.60</td
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>12.00</td>
+			<td>0.60</td
+		</tr>
+		<tr>
+			<td>sweatshirt</td>
+			<td>25.00</td>
+			<td>1.25</td>
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	
+	<ul>
+	    <li><u>Table 2</u></li>
+        <li>{Item} = PK</li>
+        <li>Price -> Tax (Transitive dependency)</li>
+		<li>non-key fields depend only to primary key</li>
+        <li>We remove Tax from Table 2</li>
+    </ul>
+	
+	<table style="width:30%; margin-right:50px; float: left;">
+		
+		<caption>Table 2</caption>
+		
+		<th><u>Item</u></th>
+        <th>Price</th>
+		
+		<tr>
+			<td>T-Shirt</td>
+			<td>12.00</td>
+		</tr>
+		<tr>
+			<td>polo</td>
+			<td>12.00</td>
+		</tr>
+		<tr>
+			<td>sweatshirt</td>
+			<td>25.00</td>
+		</tr>
+	</table>
+	
+	<table style="width:30%">
+		
+		<caption>Table 3</caption>
+		
+		<th><u>Price</u></th>
+        <th>Tax</th>
+		
+		<tr>
+			<td>12.00</td>
+			<td>0.60</td>
+		</tr>
+		<tr>
+			<td>25.00</td>
+			<td>1.25</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<ul>
+	    <li>Table 1, Table 2, Table 3 are in 3NF</li>
+    </ul>
+		
+</body>
+</html>
