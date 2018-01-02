@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	
+	function calNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer1");
+						var sigh = document.getElementById("sigh").value;
+						console.log(sigh);
+						if (sigh == '+')
+                          ansD.value = val1 + val2;
+						else if (sigh === "-")
+						  ansD.value = val1 - val2;
+						else if (sigh === "*")
+						  ansD.value = val1 * val2;
+						else 
+						  ansD.value = val1 / val2;
+                }
+	
+	$(document).ready(function(){
+	    $("#txt1").append('Number 1:');
+		$("#txt1").append('<input type="text" id="value1" name="value1" value="1"/>');
+		$("#txt2").append('Number 2:');
+		$("#txt2").append('<input type="text" id="value2" name="value1" value="1"/>');
+		$("#txt3").append('Sign :');
+		$("#txt3").append('<input type="text" id="sigh" name="value1" value="+"/>');
+		$("#btn1").append('<input type="button" name="Sumbit" value="calculate" onclick="javascript:calNumbers()"/>');
+		$("#res").append('Result:');
+		$("#res").append('<input type="text" id="answer1" name="answer" value=""/>');
+		$("input").addClass("blue");
+		$("input").css("color", "blue");
+		$("#value1").mouseenter(function(){
+			$(this).css("background-color", "red");
+        });
+		$("#value1").mouseleave(function(){
+			$(this).css("background-color", "white");
+        });
+	});
+	</script>
+	
+	
+</head>
+	<body>
+
+		<div id="txt1"></div>
+		<br/>
+		<div id="txt2"></div>
+		<br/>
+		<div id="txt3"></div>
+		<br/>
+		<div id="btn1"></div>
+		<br/>
+		<div id="res"></div>
+		
+
+	</body>
+</html>
