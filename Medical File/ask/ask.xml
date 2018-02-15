@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="paradeigmaaskisis3.xsl"?>
+<clinicalDocument>
+ <patient id="0">
+  <surname>Δαλαμήτρας</surname>
+  <name>Χρήστος</name>
+  <fathersname>Δημήτριος</fathersname>
+  <gender>Άρρεν</gender>
+  <dateofbirth>22/5/1990</dateofbirth>
+  <examination examid="00">
+   <exam>Αιματολογικές Εξετάσεις</exam>
+   <doc>Καστανάς Χρήστος</doc>
+   <dateofexam>2/8/2011</dateofexam>
+   <aimosfairinh>14-18 g/dl</aimosfairinh>
+   <aimatokriths>42-52 %</aimatokriths>   
+   <leykaaimo>6.2 K/μl</leykaaimo>
+   <ery8raaimo>4.85 M/μl</ery8raaimo>
+  </examination>
+  <examination examid="01">
+   <exam>Αιματολογικές Εξετάσεις</exam>
+   <doc>Αναστόπουλος Χαράλαμπος</doc>
+   <dateofexam>15/6/2012</dateofexam>
+   <aimosfairinh>13-17 g/dl</aimosfairinh>
+   <aimatokriths>40-50 %</aimatokriths>   
+   <leykaaimo>7.2 K/μl</leykaaimo>
+   <ery8raaimo>5.85 M/μl</ery8raaimo>
+  </examination>
+ </patient>
+ <patient id="1">
+  <surname>Δανάη</surname>
+  <name>Δαλαμήτρα</name>
+  <fathersname>Δημήτριος</fathersname>
+  <gender>Θήλυ</gender>
+  <dateofbirth>27/8/1996</dateofbirth>
+  <examination examid="10">
+   <exam>Αιματολογικές Εξετάσεις</exam>
+   <doc>Καστανάς Χρήστος</doc>
+   <dateofexam>3/11/2009</dateofexam>
+   <aimosfairinh>14-18 g/dl</aimosfairinh>
+   <aimatokriths>41-51 %</aimatokriths>   
+   <leykaaimo>6.9 K/μl</leykaaimo>
+   <ery8raaimo>5.5 M/μl</ery8raaimo>
+  </examination>
+  <examination examid="11">
+   <exam>Αιματολογικές Εξετάσεις</exam>
+   <doc>Αναστόπουλος Χαράλαμπος</doc>
+   <dateofexam>4/6/2012</dateofexam>
+   <aimosfairinh>14-18 g/dl</aimosfairinh>
+   <aimatokriths>44-54 %</aimatokriths>   
+   <leykaaimo>7.4 K/μl</leykaaimo>
+   <ery8raaimo>5.2 M/μl</ery8raaimo>
+  </examination>
+ </patient>
+
+</clinicalDocument>
